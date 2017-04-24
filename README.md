@@ -1,13 +1,11 @@
 # AxmlParserPY
 axmlparserpy,Android的XML解析器的Python实现
 # -------------------------------------------------------------------
-# version: 0.0.1
+# version: 0.0.２
 # -------------------------------------------------------------------
 
-Example: 
-
+Example:
 1. convert apk binary manifest to string manifest.
-
 import axmlparserpy.axmlprinter as axmlprinter
 
   ap = axmlprinter.AXMLPrinter(open('example/binary/AndroidManifest.xml', 'rb').read())
@@ -15,7 +13,8 @@ import axmlparserpy.axmlprinter as axmlprinter
   print(buff)
 
 2. get apk information
-import axmlparserpy.apk as apk
-  ap = apk.APK('_PATH_TO_APK')
-  print （ap.get_package()）
-  print （ap.get_androidversion_name()）
+
+	import axmlparserpy.apk as apk
+	ap = apk.APK('_PATH_TO_APK')
+	print （ap.get_package()）
+	print （ap.get_androidversion_name()）
